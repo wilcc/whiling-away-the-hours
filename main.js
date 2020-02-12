@@ -146,15 +146,20 @@ function fizzBuzz(num2){
     }
 }
 fizzBuzz(15)
-// challengeMake(15)
-// num = 1
-// num1 = 1
-// function fibonacci(num2){
-//     while (num <=num2){
-//         num2 = num1 +num
-//         console.log(num1)
-//         num = num + 1
-//     }
+challengeMake(15)
+let current = 1
+let previous = 1
+function fibonacci(num2){
+    let counter = num2;
+    while (0 < counter){
+        let sum = current + previous
+        console.log(current)
+        previous = current
+        current = sum
 
-// }
-// fibonacci(7)
+        counter --
+    }
+
+}
+fibonacci(5)
+
